@@ -3,7 +3,7 @@
     <div class="col-md-8">
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Search by title"
-          v-model="title"/>
+          v-model="title" v-on:keyup.enter="searchTitle"/>
         <div class="input-group-append">
           <button class="btn btn-outline-secondary" type="button"
             @click="searchTitle"
@@ -31,7 +31,8 @@
       </button>
     </div>
     <div class="col-md-6">
-      <div v-if="currentTutorial">
+      <br />
+      <div style="margin-top: 5px" v-if="statusDetail === true && currentIndex !== -1">
         <h4>Tutorial</h4>
         <div>
           <label><strong>Title:</strong></label> {{ currentTutorial.title }}
@@ -65,13 +66,20 @@ export default {
   data() {
     return {
       tutorials: [],
+      result: [],
       currentTutorial: null,
       currentIndex: -1,
       title: '',
+      param: null,
+      statusDetail: false,
     };
+  },
+  mounted() {
+    this.refreshList();
   },
   methods: {
     retrieveTutorials() {
+      this.statusDetail = false;
       TutorialDataService.getAll()
         .then((response) => {
           this.tutorials = response.data;
@@ -85,10 +93,12 @@ export default {
       this.retrieveTutorials();
       this.currentTutorial = null;
       this.currentIndex = -1;
+      this.setActiveTutorial(this.tutorials, this.currentIndex);
     },
     setActiveTutorial(tutorial, index) {
       this.currentTutorial = tutorial;
       this.currentIndex = index;
+      this.statusDetail = true;
     },
     removeAllTutorials() {
       TutorialDataService.deleteAll()
@@ -100,20 +110,34 @@ export default {
           console.log(e);
         });
     },
-
-    searchTitle() {
-      TutorialDataService.findByTitle(this.title)
+    searchData(param) {
+      TutorialDataService.findByTitle(param)
         .then((response) => {
           this.tutorials = response.data;
+          this.result = response.data;
           console.log(response.data);
         })
         .catch((e) => {
           console.log(e);
         });
     },
-  },
-  mounted() {
-    this.retrieveTutorials();
+    async searchTitle() {
+      await this.refreshList();
+      if (this.title !== '') {
+        if (this.param === this.title) {
+          this.tutorials = this.result;
+          alert('Please Insert Another Title');
+          this.title = '';
+          this.param = null;
+        } else {
+          this.param = this.title;
+          this.searchData(this.param);
+        }
+      } else {
+        alert('Please Insert Title');
+        this.retrieveTutorials();
+      }
+    },
   },
 };
 </script>

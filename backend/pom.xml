@@ -73,6 +73,25 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
+							<tasks>
+								<delete>
+									<directory>${project.parent.basedir}/backend/src/main/resources/public</directory>
+									<includes>
+										<include>static/</include>
+										<include>index.html</include>
+										<include>favicon.ico</include>
+									</includes>
+								</delete>
+							</tasks>
+							<!-- <filesets>
+								<fileset>
+									<directory>${project.parent.basedir}</directory>
+									<includes>
+										<include>**/backend/src/main/resources/public**</include>
+									</includes>
+									<followSymlinks>false</followSymlinks>
+								</fileset>
+							</filesets> -->
 							<outputDirectory>src/main/resources/public</outputDirectory>
 							<overwrite>true</overwrite>
 							<resources>
