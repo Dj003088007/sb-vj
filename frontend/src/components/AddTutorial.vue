@@ -28,8 +28,7 @@
     </div>
 
     <div v-else>
-      <h4>You submitted successfully!</h4>
-      <button class="btn btn-success" @click="newTutorial">Add</button>
+      <h1 class="text-center">You submitted successfully!</h1>
     </div>
   </div>
 </template>
@@ -56,21 +55,25 @@ export default {
         title: this.tutorial.title,
         description: this.tutorial.description,
       };
-      console.log(TutorialDataService, '=================>>>>');
       TutorialDataService.create(data)
         .then((response) => {
           this.tutorial.id = response.data.id;
           console.log(response.data);
           this.submitted = true;
+          setTimeout(() => {
+            this.newTutorial();
+          }, 1000);
         })
         .catch((e) => {
           console.log(e);
+          alert(e)
         });
     },
 
     newTutorial() {
       this.submitted = false;
       this.tutorial = {};
+      this.$router.back();
     },
   },
 };
