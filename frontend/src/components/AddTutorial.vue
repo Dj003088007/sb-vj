@@ -24,11 +24,22 @@
         />
       </div>
 
-      <button @click="saveTutorial" class="btn btn-success">Submit</button>
+      <div class="group-btn">
+        <button class="badge badge-light mr-2"
+          @click="back"
+        >
+          Cancel
+        </button>
+        <button type="submit" class="badge badge-success mr-2"
+          @click="saveTutorial"
+          >
+          Submit
+        </button>
+      </div>
     </div>
 
     <div v-else>
-      <h1 class="text-center">You submitted successfully!</h1>
+      <h1 style="text-align: center;">You submitted successfully!</h1>
     </div>
   </div>
 </template>
@@ -50,6 +61,9 @@ export default {
     };
   },
   methods: {
+    back() {
+      return this.$router.push({ name: 'tutorials' });
+    },
     saveTutorial() {
       const data = {
         title: this.tutorial.title,
@@ -69,11 +83,10 @@ export default {
           alert(e)
         });
     },
-
     newTutorial() {
       this.submitted = false;
       this.tutorial = {};
-      this.$router.back();
+      this.$router.push({ name: 'tutorials' });
     },
   },
 };
@@ -83,5 +96,10 @@ export default {
 .submit-form {
   max-width: 300px;
   margin: auto;
+}
+.group-btn {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
 }
 </style>
