@@ -21,6 +21,11 @@
       </div>
     </form>
 
+    <button class="badge badge-light mr-2"
+      @click="back"
+    >
+      Cancel
+    </button>
     <button class="badge badge-primary mr-2"
       v-if="currentTutorial.published"
       @click="updatePublished(false)"
@@ -65,6 +70,9 @@ export default {
     };
   },
   methods: {
+    back() {
+      return this.$router.back();
+    },
     getTutorial(id) {
       TutorialDataService.get(id)
         .then((response) => {
