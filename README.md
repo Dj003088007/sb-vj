@@ -23,8 +23,7 @@ is the spring boot for the backend
 and vue js for the frontend
 and the database is postgreql.
 
-This application has a feature, namely
-get articles from the database.
+This application has a feature is get articles from the database.
 Another feature is adding, editing and deleting articles to the database.
 ```
 
@@ -94,10 +93,10 @@ mvn clean install
 mvn --projects backend spring-boot:run
 ```
 
-### Now go to link and have a look at your first Vue.js Spring Boot App.
+### Now go to link and have a look at your first Vue.js + Spring Boot App.
 
 ```
-http://localhost:8080/
+[Go App](http://localhost:8080/)
 ```
 
 ## Screenshots of Project
