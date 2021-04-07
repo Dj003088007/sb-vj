@@ -1,6 +1,6 @@
 # spring-boot-vue-js
 
-[![Build Status](https://github.com/Dj003088007/sb-vj/workflows/build/badge.svg)](https://github.com/Dj003088007/sb-vj/actions)
+[![build](https://github.com/Dj003088007/sb-vj/actions/workflows/build.yml/badge.svg)](https://github.com/Dj003088007/sb-vj/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/Dj003088007/sb-vj/branch/main/graph/badge.svg?token=uLaKiEjIee)](https://codecov.io/gh/Dj003088007/sb-vj)
 [![versionspringboot](https://img.shields.io/badge/dynamic/xml?color=brightgreen&url=https://raw.githubusercontent.com/Dj003088007/sb-vj/master/pom.xml&query=%2F%2A%5Blocal-name%28%29%3D%27project%27%5D%2F%2A%5Blocal-name%28%29%3D%27parent%27%5D%2F%2A%5Blocal-name%28%29%3D%27version%27%5D&label=springboot)](https://github.com/spring-projects/spring-boot)
 [![versionvuejs](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/Dj003088007/sb-vj/master/frontend/package.json&query=$.dependencies.vue&label=vue&logo=vue.js)](https://vuejs.org/)
