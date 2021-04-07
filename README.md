@@ -1,9 +1,11 @@
 # spring-boot-vue-js
 
 [![Build Status](https://github.com/Dj003088007/sb-vj/workflows/build/badge.svg)](https://github.com/Dj003088007/sb-vj/actions)
+[![codecov](https://codecov.io/gh/Dj003088007/sb-vj/branch/main/graph/badge.svg?token=uLaKiEjIee)](https://codecov.io/gh/Dj003088007/sb-vj)
 [![versionspringboot](https://img.shields.io/badge/dynamic/xml?color=brightgreen&url=https://raw.githubusercontent.com/Dj003088007/sb-vj/master/pom.xml&query=%2F%2A%5Blocal-name%28%29%3D%27project%27%5D%2F%2A%5Blocal-name%28%29%3D%27parent%27%5D%2F%2A%5Blocal-name%28%29%3D%27version%27%5D&label=springboot)](https://github.com/spring-projects/spring-boot)
 [![versionvuejs](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/Dj003088007/sb-vj/master/frontend/package.json&query=$.dependencies.vue&label=vue&logo=vue.js)](https://vuejs.org/)
 [![versionjava](https://img.shields.io/badge/jdk-11-brightgreen.svg?logo=java)](https://github.com/spring-projects/spring-boot)
+[![Maven Central status](https://img.shields.io/maven-central/v/com.ruleoftech/markdown-page-generator-plugin.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.ruleoftech%22%20AND%20a%3A%22markdown-page-generator-plugin%22)
 [![versionnodejs](https://img.shields.io/badge/dynamic/xml?color=brightgreen&url=https://raw.githubusercontent.com/Dj003088007/sb-vj/master/frontend/pom.xml&query=%2F%2A%5Blocal-name%28%29%3D%27project%27%5D%2F%2A%5Blocal-name%28%29%3D%27build%27%5D%2F%2A%5Blocal-name%28%29%3D%27plugins%27%5D%2F%2A%5Blocal-name%28%29%3D%27plugin%27%5D%2F%2A%5Blocal-name%28%29%3D%27executions%27%5D%2F%2A%5Blocal-name%28%29%3D%27execution%27%5D%2F%2A%5Blocal-name%28%29%3D%27configuration%27%5D%2F%2A%5Blocal-name%28%29%3D%27nodeVersion%27%5D&label=nodejs&logo=node.js)](https://nodejs.org/en/)
 [![versionaxios](https://img.shields.io/badge/dynamic/json?color=brightgreen&url=https://raw.githubusercontent.com/Dj003088007/sb-vj/master/frontend/package.json&query=$.dependencies.axios&label=axios)](https://github.com/axios/axios)
 
