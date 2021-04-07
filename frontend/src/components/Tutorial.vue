@@ -23,7 +23,6 @@
           </div>
         </form>
       </div>
-      
       <div class="group-btn">
         <button class="badge badge-light mr-2"
           @click="back"

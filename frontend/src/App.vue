@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    
     <header>
       <nav class="text-center navbar navbar-expand navbar-dark bg-dark">
         <router-link to="/" class="navbar-brand">JDsPost</router-link>
@@ -14,13 +13,11 @@
         </div>
       </nav>
     </header>
-
     <body>
       <div class="container mt-3">
         <router-view />
       </div>
     </body>
-    
     <footer>
       <div class="footer">
         <ul>

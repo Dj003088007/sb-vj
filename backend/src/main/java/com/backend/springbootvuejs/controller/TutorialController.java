@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api")
 public class TutorialController {
@@ -29,6 +29,7 @@ public class TutorialController {
   @Autowired
   TutorialRepository tutorialRepository;
 
+  @CrossOrigin(origins = "http://localhost:8080")
   @GetMapping("/")
   public String hello(@RequestParam(value = "name", defaultValue = "Database") String name) {
     return String.format("Conneted %s!", name + ", Welcome Spring Boot Rest API");

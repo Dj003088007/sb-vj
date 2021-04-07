@@ -28,7 +28,6 @@
           </button>
         </div>
         </div>
-        
         <ul class="list-group">
           <li class="list-group-item"
             :class="{ active: index == currentIndex }"
@@ -145,6 +144,7 @@ export default {
       if (this.title !== '') {
         if (this.param === this.title) {
           this.tutorials = this.result;
+          /* eslint-disable no-alert, no-console */
           alert('Please Insert Another Title');
           this.title = '';
           this.param = null;

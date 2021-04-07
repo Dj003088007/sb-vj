@@ -12,7 +12,6 @@
           name="title"
         />
       </div>
-
       <div class="form-group">
         <label for="description">Description</label>
         <input
@@ -79,8 +78,9 @@ export default {
           }, 1000);
         })
         .catch((e) => {
+          /* eslint-disable no-alert, no-console */
           console.log(e);
-          alert(e)
+          alert(e);
         });
     },
     newTutorial() {
