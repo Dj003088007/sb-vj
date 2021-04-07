@@ -91,8 +91,12 @@ mvn --projects backend spring-boot:run
 
 ## Screenshots of Project
 
-[![Display-Home](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss01.png)]
-[![Display-Search-Result](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss02.png)]
-[![Display-Add-Article](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss03.png)]
-[![Display-Detail-Article](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss04.png)]
-[![Display-Detail-Status](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss05.png)]
+![Display-Home](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss01.png)
+
+![Display-Search-Result](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss02.png)
+
+![Display-Add-Article](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss03.png)
+
+![Display-Detail-Article](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss04.png)
+
+![Display-Detail-Status](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss05.png)
