@@ -14,6 +14,7 @@
 - [Name of Project is JDsPost](#JDsPost)
 - [Setup Vue.js & Spring Boot](#setup-vuejs--spring-boot)
 - [Project setup](#project-setup)
+- [Setup Database](#setup-database-postgresql)
 - [First App run](#first-app-run)
 - [Screenshots of Project](#screenshots-of-project)
 
@@ -81,18 +82,32 @@ vue create frontend --no-git
 
 see https://cli.vuejs.org/guide/
 
+## Setup Database ostgresql
+
+In application.properties file edit your information database.
+
+```
+spring.datasource.url= {your url database}
+spring.datasource.username= {your username database}
+spring.datasource.password= {your password database}
+```
+
 ## First App run
 
 ### Inside the root directory, do a:
 
 ```
+
 mvn clean install
+
 ```
 
 ### Run our complete Spring Boot App:
 
 ```
+
 mvn --projects backend spring-boot:run
+
 ```
 
 ### Now go to link and have a look at your first Vue.js + Spring Boot App.
@@ -120,6 +135,10 @@ mvn --projects backend spring-boot:run
 #### Display Datail Status
 
 ![Display-Detail-Status](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss05.png)
+
+```
+
+```
 
 ```
 
