@@ -95,9 +95,7 @@ mvn --projects backend spring-boot:run
 
 ### Now go to link and have a look at your first Vue.js + Spring Boot App.
 
-```
 [Go App](http://localhost:8080/)
-```
 
 ## Screenshots of Project
 
@@ -120,6 +118,10 @@ mvn --projects backend spring-boot:run
 #### Display Datail Status
 
 ![Display-Detail-Status](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss05.png)
+
+```
+
+```
 
 ```
 
