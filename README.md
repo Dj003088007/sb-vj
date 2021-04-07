@@ -87,7 +87,11 @@ mvn clean install
 mvn --projects backend spring-boot:run
 ```
 
-### Now go to http://localhost:8080/ and have a look at your first Vue.js Spring Boot App.
+### Now go to
+
+```
+http://localhost:8080/ and have a look at your first Vue.js Spring Boot App.
+```
 
 ## Screenshots of Project
 
@@ -110,3 +114,7 @@ mvn --projects backend spring-boot:run
 #### Display Datail Status
 
 ![Display-Detail-Status](https://github.com/Dj003088007/sb-vj/blob/main/screenshots/jdspost-ss05.png)
+
+```
+
+```
